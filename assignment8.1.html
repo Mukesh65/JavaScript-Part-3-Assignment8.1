@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h3>JavaScript function.</h3>
+	<h3>Conditional And Loop.</h3>
+	<script type="text/javascript">
+		function isPrime(num) {
+				if(num === 2){
+					return true;
+				}
+				else if(num > 1){
+					for(var i = 2; i < num; i++){
+						if(num % i !== 0) {
+							return true;
+						}
+						else if(num === i * i){
+							return false;
+						}
+						else {
+							return false;
+						}
+					}
+				}
+				else{
+					return false;
+				}
+			}
+			console.log(isPrime(98));
+			console.log(isPrime(97));
+
+	</script>
+	 
+			
+</body>
+</html>
